@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+          {% include "navbar.html" %}<br/>
+
+
+        
+         <div style="display: flex;align-items: center;justify-content: center;margin-top: 200px;">
+            <h1 style="text-align: center;font-weight: 400;">Welcome to<h1 style="text-align: center;color:rgba(5, 126, 118, 0.918);font-weight: 400;"> ComputifyBMI</h1></h1>
+        </div>
+         <h4 style="text-align: center;margin-top: 10px;font-weight: 400;margin-bottom: 20px;">Want to Know about Bmi ?? <a style="text-decoration: none;font-weight: 400;" href="{% url 'about' %}">click here</h4>
+          <div style="display: flex;align-items: center;justify-content: center;margin-top: 10px;">
+            <a href="{% url 'check_bmi' %}" style="margin: auto;" class="btn btn-secondary outline">check your bmi -></a>
+          </div>
+          
+          
+          
+          
+
+
+
+          
+
+
+
+           
+            
+           
+           
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
